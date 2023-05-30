@@ -22,7 +22,7 @@ Assumptions
 * The route is to be traversed exactly as provided, from left to right
 * A train station CRS code has to be an enum value within `UKTrainStationCode`
 * SHA256 hashing algorithm has been deemed fit for purpose to cache visited routes
-* Alembic is the tool to handle migrations on the persistence model
+* [Alembic](https://github.com/sqlalchemy/alembic) is the tool to handle migrations on the persistence model
 
 Development Requirements
 ------------------------
