@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "contilio"
+version = "0.1"
+description = "A train station journey plannerpersistence"
+authors = ["hamada969"]
+
+packages = [
+    { include = "contilio", from="src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = "^0.22.0"
+sqlalchemy = "^2.0.15"
+python-dotenv = "^1.0.0"
+alembic = "^1.11.1"
+asyncio = "^3.4.3"
+pydantic = "^1.10.8"
+fastapi = "^0.95.2"
+aiohttp = "^3.8.4"
+strawberry-graphql = "^0.178.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+black = "^22.6.0"
+flake8 = "^3.9.2"
+pytest-asyncio = "^0.15.1"
+async-asgi-testclient = "^1.4.2"
+
+[tool.black]
+line-length = 99
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
